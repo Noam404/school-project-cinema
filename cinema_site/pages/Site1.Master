@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="cinema_site.pages.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Cinema World</title>
+    <link href="../css/master1.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div id="main_nav">
+                <a href="#"><img src="../images/cinema_world_logo_short.svg"/></a>
+                <nav id="buttons_nav">
+                    <a href="#">all movies</a>
+                    <a href="#">genres</a>
+                    <a href="#">about us</a>
+                    <a href="#">contact us</a>
+                </nav>
+                <a href="#" id="account_button">your account <img src="../images/profile_picture.png" /></a>
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

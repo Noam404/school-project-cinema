@@ -1,0 +1,197 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --color-1: #DC8024;
+}
+
+body {
+    background-image: url('../images/bg_topography.jpg');
+    background-repeat: repeat;
+    background-size: 30%;
+    color: #a3a3a3;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5em;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+#main_landing_page {
+    display: flex;
+}
+
+#hero {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    padding-bottom: 0;
+    box-sizing: border-box;
+}
+
+#title_logo {
+    width: 100%;
+}
+
+
+
+#hero p {
+    text-align: left;
+    width: 100%;
+    /*margin: 2em 0;*/
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+#hero #account_buttons_div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#hero #account_buttons_div a {
+    width: 100%;
+    margin: .7em 0;
+    padding: .4em;
+    font-size: .8em;
+    text-transform: capitalize;
+    border-radius: 5px;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    transition: .2s ease;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+}
+
+#hero #account_buttons_div a:nth-child(1) {
+    background: transparent;
+    border: var(--color-1) 2px solid;
+    color: var(--color-1);
+
+}
+
+#hero #account_buttons_div a:nth-child(2) {
+    background: var(--color-1);
+    color: black;
+}
+
+#hero #account_buttons_div a:nth-child(1):hover {
+        color: black;
+        background: var(--color-1);
+    }
+
+#hero #account_buttons_div a:nth-child(2):hover {
+    background: white;
+}
+
+#starred_movies {
+    width: 60%;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row;
+    position: relative;
+}
+
+#small_nav {
+    align-self: flex-start;
+}
+
+#small_nav a {
+    color: #3a3a3a;
+    font-size: .7em;
+    margin-right: 1em;
+    text-transform: capitalize;
+}
+
+#small_nav a:hover {
+    color: #4a4a4a;
+}
+
+#small_nav a:active {
+    color: var(--color-1);
+}
+
+#starred_movies .movie_element {
+    height: 100%;
+    width: 20%;
+    position: relative;
+    top:0; left: 0;
+}
+
+#starred_movies .movie_element .movie_image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0; left: 50%;
+    transform: translateX(-50%);
+    transition: .2s ease;
+}
+
+#starred_movies .movie_element .production_icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    pointer-events: none;
+    z-index: 20;
+    transition: .2s ease;
+}
+#starred_movies .movie_element:hover .production_icon {
+    z-index: 30;
+    width: 100%;
+}
+
+#black_radial_gradient {
+    position:absolute;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(transparent, transparent, black);
+    pointer-events: none;
+}
+
+#starred_movies .movie_element .black_gradient {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: linear-gradient(90deg, rgba(0,0,0,.5),transparent, transparent, rgba(0,0,0,.5))
+}
+
+#starred_movies .movie_element .black_text_shadow {
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, transparent, rgba(0,0,0,.5), transparent, transparent);
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#starred_movies .movie_element:hover .movie_image {
+    height: 100%;
+    width: 200%;
+    z-index: 25;
+}
+
+#black_screen {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: 20;
+    background: black;
+    opacity: 0;
+    pointer-events: none;
+    transition: .3s ease;
+}
+
+#starred_movies:hover ~ #black_screen {
+    opacity: .6;
+}
