@@ -4,12 +4,13 @@
     --color-1: #DC8024;
     --color-2: #de9449;
     --bg-color: #181818;
+    --bg-color-2: #292929;
 }
-
 body {
-    background-image: url('../images/bg_topography.jpg');
-    background-repeat: repeat;
-    background-size: 30%;
+    /*background-image: url('../images/bg_topography.jpg');*/
+    /*background-repeat: repeat;*/
+    /*background-size: 30%;*/
+    background: var(--bg-color);
 }
 
 #form1 {
@@ -18,16 +19,14 @@ body {
 
 #main_nav {
     display: flex;
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
     justify-content: space-between;
-    min-width: 100vh;
-    height: 3em;
-    margin: 1em 2em;
+    width: 100%;
+    height: 5em;
+    padding: 1em 2em;
     box-sizing: border-box;
-}
-
-#main_nav a:first-child {
 }
 
 #main_nav a:first-child img {

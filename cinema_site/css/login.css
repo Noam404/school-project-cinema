@@ -2,7 +2,7 @@
     background-image: url('../images/bg_topography.jpg');
     background-repeat: repeat;
     background-size: 30%;
-    color: #a3a3a3;
+    color: var(--font-color);
     font-family: "Poppins", sans-serif;
     font-size: 1.5em;
     margin: 0;
@@ -17,56 +17,29 @@
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    background: rgba(150, 150, 150, .1);
-    backdrop-filter: blur(1rem);
+    background: var(--bg-color2);
     border-radius: .5em;
     padding: 2em 3em;
 }
 
-#form_div {
-    display: flex;
-    flex-flow: column nowrap;
-}
-
-#form_div input {
-    margin: 1em 0;
+#form_div #a_div a {
     font-size: .8em;
-    padding: .7em 1em;
-    background: transparent;
-    border: #3e3e3e 3px solid;
-    outline: none;
-    border-radius: .5em;
-    width: 100%;
-    color: #a3a3a3;
 }
 
-#form_div .main_input span {
-    transition: ease .2s;
-    position: absolute;
-}
-
-#form_div .main_input input:focus ~ span,
-#form_div .main_input input:not(:placeholder-shown) ~ span {
-    font-size: .6em;
-    top: 25%;
-}
-
-#form_div div {
-    position: relative;
-    width: 100%;
-}
-
-#form_div div .input_placeholder {
+/*#form_div #submit::before, #form_div #submit::after {
+    content: '';
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
-    left: 1em;
-    pointer-events: none;
-    font-size: 1em;
+    left: 50%;
+    width: 120%;
+    height: 120%;
+    transform: translate(-50%);
+    background: transparent;
+    backdrop-filter: blur(1rem);
+    z-index: 10;
 }
 
-h1 {
-    text-align: center;
-    margin-top: 0;
-    color: var(--color-1);
-}
+#form_div #submit:hover::before {
+    z-index: 5;
+    background: linear-gradient(200deg, white, var(--color-1), var(--color-1));
+}*/

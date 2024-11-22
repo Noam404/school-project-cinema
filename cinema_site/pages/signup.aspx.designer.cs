@@ -11,7 +11,7 @@ namespace cinema_site.pages
 {
 
 
-    public partial class login
+    public partial class signup
     {
 
         /// <summary>

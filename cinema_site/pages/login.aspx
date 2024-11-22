@@ -16,9 +16,13 @@
                     <input type="password" placeholder=""/>
                     <span class="input_placeholder">Password</span>
                 </div>
-                <a href="#">forgot password?</a>
-                <input type="submit" value="LOG IN"/>
+                <div style="display: flex; justify-content: space-between;" id="a_div">
+                    <a href="#">forgot password?</a>
+                    <a href="signup.aspx">register here</a>
                 </div>
+                <button type="submit" id="submit">log in</button>
+            </div>
+
             </div>
         </div>
 </asp:Content>

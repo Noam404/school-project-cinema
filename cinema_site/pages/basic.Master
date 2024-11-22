@@ -11,8 +11,28 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <a href="landingPage.aspx">
+                <img src="../images/cinema_world_logo_icon.svg" id="cw_logo_icon" alt="logo"/>
+            </a>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
+            <script>
+                const button = document.getElementById("submit");
+                
+                button.addEventListener('click', (event) => {
+                    event.preventDefault()
+                    const wheel = document.createElement('img');
+                    wheel.src = "../images/loading.png";
+                    wheel.style.height = '1.5em';
+                    wheel.style.animation = 'spinning 1s linear infinite';
+                    
+                    button.innerHTML = '';
+                    button.appendChild(wheel);
+                    button.style.background = '#de9449';
+                    button.style.cursor = 'default';
+                    button.disabled = true;
+                })
+            </script>
         </div>
     </form>
 </body>

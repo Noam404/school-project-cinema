@@ -71,24 +71,30 @@
     <Content Include="css\landingpage.css" />
     <Content Include="css\login.css" />
     <Content Include="css\master1.css" />
+    <Content Include="css\signup.css" />
     <Content Include="images\bg_topography.jpg" />
+    <Content Include="images\blobs\blob1.svg" />
+    <Content Include="images\blobs\blob2.svg" />
+    <Content Include="images\blobs\blob3.svg" />
     <Content Include="images\cinema_world_logo.svg" />
-    <Content Include="images\cinema_world_logo_icon.svg" />
     <Content Include="images\cinema_world_logo_short.svg" />
-    <Content Include="images\poster\cm_disney.jpg" />
-    <Content Include="images\poster\cm_marvel.jpg" />
-    <Content Include="images\poster\cm_paramount.jpg" />
-    <Content Include="images\poster\cm_universal.png" />
-    <Content Include="images\poster\cm_wb.jpg" />
+    <Content Include="images\loading.png" />
+    <Content Include="images\poster\inside_out_2.jpg" />
+    <Content Include="images\poster\iron_man.jpg" />
+    <Content Include="images\poster\scream_5.jpg" />
+    <Content Include="images\poster\jurassic_world.png" />
+    <Content Include="images\poster\the_dark_knight.jpg" />
     <Content Include="images\production\cw_disney.svg" />
     <Content Include="images\production\cw_marvel.svg" />
     <Content Include="images\production\cw_paramount.svg" />
     <Content Include="images\production\cw_universal.svg" />
     <Content Include="images\production\cw_wb.svg" />
     <Content Include="images\profile_picture.png" />
+    <Content Include="images\cinema_world_logo_icon.svg" />
     <Content Include="pages\homePage.aspx" />
-    <Content Include="pages\LandingPage.aspx" />
+    <Content Include="pages\landingPage.aspx" />
     <Content Include="pages\login.aspx" />
+    <Content Include="pages\signup.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -106,12 +112,12 @@
     <Compile Include="pages\homePage.aspx.designer.cs">
       <DependentUpon>homePage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="pages\LandingPage.aspx.cs">
-      <DependentUpon>LandingPage.aspx</DependentUpon>
+    <Compile Include="pages\landingPage.aspx.cs">
+      <DependentUpon>landingPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="pages\LandingPage.aspx.designer.cs">
-      <DependentUpon>LandingPage.aspx</DependentUpon>
+    <Compile Include="pages\landingPage.aspx.designer.cs">
+      <DependentUpon>landingPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="pages\login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>
@@ -119,6 +125,13 @@
     </Compile>
     <Compile Include="pages\login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\signup.aspx.cs">
+      <DependentUpon>signup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\signup.aspx.designer.cs">
+      <DependentUpon>signup.aspx</DependentUpon>
     </Compile>
     <Compile Include="pages\Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>
@@ -141,7 +154,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="images\banner\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

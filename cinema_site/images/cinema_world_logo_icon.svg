@@ -1,1 +1,25 @@
-<svg width="2891" height="1330" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" overflow="hidden"><defs><clipPath id="clip0"><rect x="787" y="528" width="2891" height="1330"/></clipPath></defs><g clip-path="url(#clip0)" transform="translate(-787 -528)"><text font-family="Star Jedi,Star Jedi_MSFontService,sans-serif" font-weight="400" font-size="633" transform="matrix(1 0 0 1 1167.32 1314)">^</text></g></svg>
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+ "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="278.000000pt" height="281.000000pt" viewBox="0 0 278.000000 281.000000"
+ preserveAspectRatio="xMidYMid meet">
+
+<g transform="translate(0.000000,281.000000) scale(0.100000,-0.100000)"
+fill="#DC8024" stroke="none">
+<path d="M1135 2730 c-172 -34 -390 -129 -525 -228 -100 -73 -263 -239 -327
+-333 -97 -141 -203 -385 -203 -465 l0 -34 244 0 243 0 51 103 c120 239 314
+403 557 469 104 29 281 35 386 13 278 -56 542 -269 644 -522 l24 -58 250 -3
+c290 -3 267 -14 227 109 -90 276 -260 524 -469 686 -136 105 -346 207 -507
+247 -164 39 -441 47 -595 16z"/>
+<path d="M1271 1785 c-124 -46 -210 -125 -262 -241 -19 -41 -23 -68 -23 -159
+-1 -108 0 -112 37 -187 40 -81 114 -160 179 -191 164 -78 350 -53 480 63 94
+83 136 181 139 318 2 143 -97 307 -224 370 -53 26 -163 52 -222 51 -22 0 -69
+-11 -104 -24z"/>
+<path d="M80 1065 c0 -47 60 -206 121 -324 183 -351 467 -564 914 -686 80 -22
+384 -32 497 -16 416 59 807 341 998 720 36 71 95 233 114 314 l6 27 -250 0
+c-196 0 -250 -3 -250 -13 0 -21 -76 -162 -118 -220 -111 -149 -262 -257 -442
+-315 -108 -35 -186 -45 -299 -37 -351 23 -603 192 -765 513 l-36 72 -245 0
+-245 0 0 -35z"/>
+</g>
+</svg>
